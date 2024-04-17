@@ -1,43 +1,43 @@
 .main__other-news {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+    display: flex; /* Utiliza o modelo de caixa flexível para posicionar os filhos */
+    justify-content: space-between; /* Espaça os filhos igualmente e coloca espaço entre eles */
+    margin-top: 2rem; /* Adiciona uma margem superior de 2rem */
 }
 
 .other-news__card {
-    display: flex;
-    margin-right: 1rem;
+    display: flex; /* Utiliza o modelo de caixa flexível para posicionar os filhos */
+    margin-right: 1rem; /* Adiciona uma margem à direita de 1rem */
 }
 
 .other-news__card > img {
-    width: 33%;
+    width: 33%; /* Define a largura da imagem para 33% do seu contêiner pai */
 }
 
 .card__content {
-    margin-left: 1.5rem;
-    padding-top: .5rem;
+    margin-left: 1.5rem; /* Adiciona uma margem à esquerda de 1.5rem */
+    padding-top: .5rem; /* Adiciona um preenchimento superior de 0.5rem */
 }
 
 .content__number {
-    margin-bottom: 1rem;
-    color: #C8C8CA;
-    font-size: 38px;
-    font-weight: 800;
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem */
+    color: #C8C8CA; /* Define a cor do texto para um cinza claro */
+    font-size: 38px; /* Define o tamanho da fonte para 38px */
+    font-weight: 800; /* Define a espessura da fonte para 800 (negrito) */
 }
 
 .card__content > h3 {
-    margin-bottom: 1rem;
-    font-size: 20px;
-    font-weight: 600;
+    margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem */
+    font-size: 20px; /* Define o tamanho da fonte para 20px */
+    font-weight: 600; /* Define a espessura da fonte para 600 (semi-negrito) */
 }
 
 .card__content > h3:hover {
-    color: #D36A66;
-    cursor: pointer;
+    color: #D36A66; /* Muda a cor do texto para um vermelho coral ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 .card__content > p {
-    color: #C8C8CA;
-    line-height: 26px;
-    font-weight: 600;
+    color: #C8C8CA; /* Define a cor do texto para um cinza claro */
+    line-height: 26px; /* Define a altura da linha para 26px */
+    font-weight: 600; /* Define a espessura da fonte para 600 (semi-negrito) */
 }

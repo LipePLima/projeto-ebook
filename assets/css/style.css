@@ -2,3 +2,9 @@ body {
      margin: 48px 100px;
      font-family: 'Inter', sans-serif;
 }
+
+@media (max-width: 1200px) {
+     body {
+         margin: 48px 22px;
+     }
+}

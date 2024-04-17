@@ -3,21 +3,25 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 48px;
+}
 
-    .nav__list {
-         display: flex;
+.nav__list {
+     display: flex;
+}
 
-         .list__link {
-              margin-right: 3rem;
-              color: #c5c6ce;
-              text-decoration: none;
-              font-size: 18px;
-              font-weight: 600;
+.list__link {
+     margin-right: 3rem;
+     color: #c5c6ce;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: 600;
 
-              &:hover {
-                   color: #D36A66;
-              }
+     &:hover {
+          color: #D36A66;
+     }
 
-         }
-    }
+}
+
+.nav__button {
+     display: none;
 }

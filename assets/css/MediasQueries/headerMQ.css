@@ -1,0 +1,65 @@
+@media (max-width: 1200px) { /* Esta media query aplica os estilos abaixo quando a tela tem no máximo 1200px de largura. */
+    nav { /* Seleciona todos os elementos <nav>. */
+        display: flex; /* Define o display como flex para criar um layout flexível. */
+        flex-direction: column; /* Os itens dentro do <nav> são organizados em coluna. */
+        justify-content: right; /* Alinha os itens à direita no contêiner flexível. */
+    }
+
+    .nav__button { /* Seleciona todos os elementos com a classe .nav__button. */
+        z-index: 999; /* Coloca o botão acima de quase todos os outros elementos na página. */
+        display: initial; /* Define o display para o valor padrão do elemento. */
+        border: none; /* Remove qualquer borda do botão. */
+        background-color: transparent; /* Define a cor de fundo do botão como transparente. */
+    }
+
+    .button__img { /* Seleciona todos os elementos com a classe .button__img. */
+        width: 38px; /* Define a largura da imagem do botão. */
+        height: 22px; /* Define a altura da imagem do botão. */
+    }
+
+    .button__img-close { /* Seleciona todos os elementos com a classe .button__img-close. */
+        width: 32px; /* Define a largura da imagem de fechamento do botão. */
+        height: 32px; /* Define a altura da imagem de fechamento do botão. */
+    }
+
+    .div__list { /* Seleciona todos os elementos com a classe .div__list. */
+        display: none; /* Esconde o elemento, tornando-o não visível. */
+    }
+
+    @keyframes openList { /* Define a animação chamada openList. */
+        from { /* Início da animação. */
+            left: 100%; /* Posiciona o elemento totalmente fora da tela à direita. */
+        } to { /* Fim da animação. */
+            left: 0; /* Posiciona o elemento totalmente dentro da tela à esquerda. */
+        }
+    }
+
+    .div__list-opened { /* Seleciona todos os elementos com a classe .div__list-opened. */
+        position: absolute; /* Posiciona o elemento de forma absoluta em relação ao seu contêiner mais próximo posicionado. */
+        display: flex; /* Define o display como flex para criar um layout flexível. */
+        justify-content: right; /* Alinha os itens à direita no contêiner flexível. */
+        width: 100%; /* Define a largura do elemento como 100% da largura da tela. */
+        height: 100vh; /* Define a altura do elemento como 100% da altura da tela. */
+        left: 0; /* Posiciona o elemento no início do eixo horizontal. */
+        top: 0; /* Posiciona o elemento no início do eixo vertical. */
+        backdrop-filter: brightness(0.5); /* Aplica um filtro de brilho ao fundo atrás do elemento. */
+    }
+
+    .nav__list { /* Seleciona todos os elementos com a classe .nav__list. */
+        position: relative; /* Posiciona o elemento de forma relativa ao seu posicionamento normal. */
+        width: 50%; /* Define a largura do elemento como 50% da largura do contêiner. */
+        padding: 8rem 0 0 2rem; /* Define o espaçamento interno do elemento. */
+        background-color: #fff; /* Define a cor de fundo do elemento como branco. */
+        flex-direction: column; /* Os itens dentro do elemento são organizados em coluna. */
+        animation: openList .5s; /* Aplica a animação openList ao elemento durante 0.5 segundos. */
+    }
+
+    .nav__list > li { /* Seleciona todos os elementos <li> que são filhos diretos de .nav__list. */
+        margin-bottom: 1.5rem; /* Define a margem inferior de cada <li>. */
+    }
+
+    .list__link { /* Seleciona todos os elementos com a classe .list__link. */
+        font-weight: 400; /* Define a espessura da fonte dos links. */
+        color: #000; /* Define a cor dos links como preto. */
+    }
+}

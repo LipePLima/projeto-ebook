@@ -11,9 +11,12 @@
      <link rel="stylesheet" href="./assets/css/header/header.css">
 
      <!-- CSS Main -->
-     <link rel="stylesheet" href="./assets/css/main/topNews.css">
      <link rel="stylesheet" href="./assets/css/main/futureNew.css">
      <link rel="stylesheet" href="./assets/css/main/otherNews.css">
+
+     <!-- CSS Medias Queries -->
+     <link rel="stylesheet" href="./assets/css/MediasQueries/headerMQ.css">
+     <link rel="stylesheet" href="./assets/css/MediasQueries/mainMQ.css">
 
      <!-- Fontes -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,21 +29,25 @@
                <img class="link__img" src="./assets/images/logo.svg" alt="Logotipo News Homepage">
           </a>
           <nav>
-               <ul class="nav__list">
-                    <li><a href="#" class="list__link">Home</a></li>
-                    <li><a href="#" class="list__link">Novo</a></li>
-                    <li><a href="#" class="list__link">Popular</a></li>
-                    <li><a href="#" class="list__link">Tendências</a></li>
-                    <li><a href="#" class="list__link" style="margin-right: 0;">Categorias</a></li>
-               </ul>
+               <button type="button" class="nav__button" onclick="toggleMenu()"><img src="assets/images/icon-menu.svg" alt="Imagem de Menu Hamburguer" class="button__img"></button>
+               <div class="div__list" id="div__list">
+                    <ul class="nav__list">
+                         <li><a href="#" class="list__link">Home</a></li>
+                         <li><a href="#" class="list__link">Novo</a></li>
+                         <li><a href="#" class="list__link">Popular</a></li>
+                         <li><a href="#" class="list__link">Tendências</a></li>
+                         <li><a href="#" class="list__link" style="margin-right: 0;">Categorias</a></li>
+                    </ul>
+               </div>
           </nav>
      </header>
      <main>
           <section class="main__top-news">
                <article class="top-news__future">
                     <img class="future__img" src="./assets/images/image-web-3-desktop.jpg" alt="Imagem de formas geométricas">
+                    <img class="future__img-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="Imagem de formas geométricas versão mobile">
                     <div class="future__content">
-                         <h1 id="primary-title">O futuro brilhante da Web 3.0?</h1>
+                         <h1 id="primary-title">O futuro brilhante da<br> Web 3.0?</h1>
                          <div class="content__text">
                               <p>Mergulhamos na próxima evolução da web que pretende colocar o poder das plataformas de volta nas mãos das pessoas. Mas será que está realmente cumprindo sua promessa?</p>
                               <button type="button">Leia Mais</button>
@@ -80,7 +87,7 @@
                          <p>Nossas melhores escolhas para várias necessidades e orçamentos.</p>
                     </div>
                </article>
-               <article class="other-news__card" style="margin-right: 0;">
+               <article class="other-news__card" style="margin: 0;">
                     <img src="./assets/images/image-gaming-growth.jpg" alt="Imagem de uma mão com um controle de PS4 no ar">
                     <div class="card__content">
                          <p class="content__number">03</p>
@@ -90,5 +97,7 @@
                </article>
           </section>
      </main>
+
+     <script src="assets/js/main.js"></script>
 </body>
 </html>
